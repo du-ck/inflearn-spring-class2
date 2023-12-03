@@ -19,8 +19,13 @@ public class OrderServiceImpl implements OrderService {
     // 이렇게하면 OCP 위반 (인터페이스와 구체클래스를 함께 의존해버림)
     //private final DiscountPolicy discountPolicy = new RateDiscountPolicy();
 
+    /**
+     * 필드에다가 @Autowired 는 좋은 방법이 X
+     * 요즘은 생성자에다가 씀
+     */
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
+
 
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
