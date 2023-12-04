@@ -21,7 +21,7 @@ public class OrderServiceImpl implements OrderService {
 
     /**
      * 필드에다가 @Autowired 는 좋은 방법이 X
-     * 요즘은 생성자에다가 씀
+     * 요즘은 생성자 에다가 주로 씀
      */
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
