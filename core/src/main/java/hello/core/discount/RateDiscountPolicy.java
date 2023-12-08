@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @Primary 는 중복된 이름의 빈이 있을때 @Primary 를 붙은것을 우선으로 가져온다.
  *
  * 스프링은 자동보다는 수동을 우선하기때문에
- * 두개 다 있을 경우 우선순위는 @Qualifier 가 가져온ㄷ
+ * 두개 다 있을 경우 우선순위는 @Qualifier 가 가져온다
  */
 @Component
 //@Qualifier("mainDiscountPolicy")
