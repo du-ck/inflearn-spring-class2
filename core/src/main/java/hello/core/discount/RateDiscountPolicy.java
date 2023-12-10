@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  * 두개 다 있을 경우 우선순위는 @Qualifier 가 가져온다
  */
 @Component
-//@Qualifier("mainDiscountPolicy")
+@Qualifier("rateDiscountPolicy")
 //@Primary
 @MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy {
