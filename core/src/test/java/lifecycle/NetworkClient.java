@@ -33,13 +33,13 @@ public class NetworkClient implements InitializingBean, DisposableBean {
     }
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void init() throws Exception {
         connect();
         call("초기화 연결 메세지");
     }
 
     @Override
-    public void destroy() throws Exception {
+    public void close() throws Exception {
         disconnect();
     }
 }
