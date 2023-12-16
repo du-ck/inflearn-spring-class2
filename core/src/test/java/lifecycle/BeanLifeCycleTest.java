@@ -28,7 +28,8 @@ public class BeanLifeCycleTest {
          * 이걸 사용하기 싫으면 destroyMethod=""  형태로 공백으로 지정해주면된다.
          *
          */
-        @Bean(initMethod = "init", destroyMethod = "close")
+        //@Bean(initMethod = "init", destroyMethod = "close")
+        @Bean
         public NetworkClient networkClient() {
             NetworkClient networkClient = new NetworkClient();
             networkClient.setUrl("http://hello-spring.dev");
