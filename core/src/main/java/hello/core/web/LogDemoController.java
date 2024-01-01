@@ -15,7 +15,7 @@ public class LogDemoController {
     private final LogDemoService logDemoService;
     private final MyLogger myLogger;
 
-    @RequestMapping("log-demo")
+    @RequestMapping("log-demoo")
     @ResponseBody
     public String logDemo(HttpServletRequest request) {
         String requestURL = request.getRequestURL().toString();
