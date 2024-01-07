@@ -17,7 +17,7 @@ public class LogDemoController {
 
     /**
      * ObjectProvider 덕분에 호출시점까지 request scope 빈의 생성을 지연할 수 있다.
-     * myLogger 를 통해 동시요청이와도 uuid 값으로 로그 구분 가능
+     * myLogger 를 통해 동시요청이와도 uuid 값으로 로그 구분 가능하다
      */
     private final ObjectProvider<MyLogger> myLoggerProvider;
 
